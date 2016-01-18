@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31FE5DDC1BC454630017DF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FE5DDB1BC454630017DF9D /* AppDelegate.swift */; };
+		31FE5DDE1BC454630017DF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FE5DDD1BC454630017DF9D /* ViewController.swift */; };
+		31FE5DE11BC454630017DF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FE5DDF1BC454630017DF9D /* Main.storyboard */; };
+		31FE5DE31BC454630017DF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FE5DE21BC454630017DF9D /* Assets.xcassets */; };
+		31FE5DE61BC454630017DF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FE5DE41BC454630017DF9D /* LaunchScreen.storyboard */; };
+		31FE5E2F1BC455180017DF9D /* CookieStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE5E2C1BC455110017DF9D /* CookieStore.framework */; };
+		31FE5E301BC455180017DF9D /* CookieStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE5E2C1BC455110017DF9D /* CookieStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31FE5E2B1BC455110017DF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FE5E261BC455110017DF9D /* CookieStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31FE5E0C1BC454F70017DF9D;
+			remoteInfo = CookieStore;
+		};
+		31FE5E2D1BC455110017DF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FE5E261BC455110017DF9D /* CookieStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31FE5E161BC454F70017DF9D;
+			remoteInfo = CookieStoreTests;
+		};
+		31FE5E311BC455180017DF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FE5E261BC455110017DF9D /* CookieStore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 31FE5E0B1BC454F70017DF9D;
+			remoteInfo = CookieStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31FE5E331BC455180017DF9D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31FE5E301BC455180017DF9D /* CookieStore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		31FE5DD81BC454630017DF9D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FE5DDB1BC454630017DF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31FE5DDD1BC454630017DF9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31FE5DE01BC454630017DF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31FE5DE21BC454630017DF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31FE5DE51BC454630017DF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31FE5DE71BC454630017DF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31FE5E261BC455110017DF9D /* CookieStore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CookieStore.xcodeproj; path = ../Lib/CookieStore.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31FE5DD51BC454630017DF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FE5E2F1BC455180017DF9D /* CookieStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31FE5DCF1BC454630017DF9D = {
+			isa = PBXGroup;
+			children = (
+				31FE5DDA1BC454630017DF9D /* Example */,
+				31FE5DD91BC454630017DF9D /* Products */,
+				31FE5E261BC455110017DF9D /* CookieStore.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		31FE5DD91BC454630017DF9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31FE5DD81BC454630017DF9D /* Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31FE5DDA1BC454630017DF9D /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				31FE5DDB1BC454630017DF9D /* AppDelegate.swift */,
+				31FE5DDD1BC454630017DF9D /* ViewController.swift */,
+				31FE5DDF1BC454630017DF9D /* Main.storyboard */,
+				31FE5DE21BC454630017DF9D /* Assets.xcassets */,
+				31FE5DE41BC454630017DF9D /* LaunchScreen.storyboard */,
+				31FE5DE71BC454630017DF9D /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		31FE5E271BC455110017DF9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31FE5E2C1BC455110017DF9D /* CookieStore.framework */,
+				31FE5E2E1BC455110017DF9D /* CookieStoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31FE5DD71BC454630017DF9D /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31FE5DEA1BC454630017DF9D /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				31FE5DD41BC454630017DF9D /* Sources */,
+				31FE5DD51BC454630017DF9D /* Frameworks */,
+				31FE5DD61BC454630017DF9D /* Resources */,
+				31FE5E331BC455180017DF9D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31FE5E321BC455180017DF9D /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 31FE5DD81BC454630017DF9D /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31FE5DD01BC454630017DF9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Shunsuke Furubayashi";
+				TargetAttributes = {
+					31FE5DD71BC454630017DF9D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 31FE5DD31BC454630017DF9D /* Build configuration list for PBXProject "Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31FE5DCF1BC454630017DF9D;
+			productRefGroup = 31FE5DD91BC454630017DF9D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 31FE5E271BC455110017DF9D /* Products */;
+					ProjectRef = 31FE5E261BC455110017DF9D /* CookieStore.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				31FE5DD71BC454630017DF9D /* Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		31FE5E2C1BC455110017DF9D /* CookieStore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CookieStore.framework;
+			remoteRef = 31FE5E2B1BC455110017DF9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31FE5E2E1BC455110017DF9D /* CookieStoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CookieStoreTests.xctest;
+			remoteRef = 31FE5E2D1BC455110017DF9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31FE5DD61BC454630017DF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FE5DE61BC454630017DF9D /* LaunchScreen.storyboard in Resources */,
+				31FE5DE31BC454630017DF9D /* Assets.xcassets in Resources */,
+				31FE5DE11BC454630017DF9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31FE5DD41BC454630017DF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FE5DDE1BC454630017DF9D /* ViewController.swift in Sources */,
+				31FE5DDC1BC454630017DF9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31FE5E321BC455180017DF9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CookieStore;
+			targetProxy = 31FE5E311BC455180017DF9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31FE5DDF1BC454630017DF9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31FE5DE01BC454630017DF9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31FE5DE41BC454630017DF9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31FE5DE51BC454630017DF9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31FE5DE81BC454630017DF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31FE5DE91BC454630017DF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31FE5DEB1BC454630017DF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.cookieStore.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31FE5DEC1BC454630017DF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.cookieStore.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31FE5DD31BC454630017DF9D /* Build configuration list for PBXProject "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FE5DE81BC454630017DF9D /* Debug */,
+				31FE5DE91BC454630017DF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31FE5DEA1BC454630017DF9D /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FE5DEB1BC454630017DF9D /* Debug */,
+				31FE5DEC1BC454630017DF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31FE5DD01BC454630017DF9D /* Project object */;
+}
