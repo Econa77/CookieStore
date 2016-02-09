@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CookieStore"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "ios http cookie storage"
   s.homepage         = "http://github.com/Econa77/CookieStore"
   s.license          = 'MIT'
