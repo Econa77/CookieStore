@@ -18,17 +18,17 @@ public class CookieStore: NSObject {
         }
     }
     private let kCookieStoreSavedHTTPCookiesKey = "kCookieStoreSavedHTTPCookiesKey"
-    
+
     // MARK: - Initialize
     override init() {
         super.init()
         self.loadCookies()
     }
-    
+
     deinit {
         self.removeNotification()
     }
-    
+
     public func setup() {
         self.registApplicationNotification()
     }
@@ -44,7 +44,7 @@ public extension CookieStore {
         }
         return ""
     }
-    
+
     public func loadCookies() {
         let defaults = NSUserDefaults.standardUserDefaults()
         if let cookiesData = defaults.objectForKey(kCookieStoreSavedHTTPCookiesKey) as? NSData {
@@ -55,24 +55,26 @@ public extension CookieStore {
             }
         }
     }
-    
+
     public func saveCookies() {
+        let defaults = NSUserDefaults.standardUserDefaults()
         if let cookies = NSHTTPCookieStorage.sharedHTTPCookieStorage().cookies {
             var savedCookies = [NSHTTPCookie]()
             for cookie in cookies where self.saveDomains.contains(cookie.domain) {
                 savedCookies.append(cookie)
             }
-            if savedCookies.count != 0 {
+            if !savedCookies.isEmpty {
                 let cookiesData = NSKeyedArchiver.archivedDataWithRootObject(savedCookies)
-                let defaults = NSUserDefaults.standardUserDefaults()
                 defaults.setObject(cookiesData, forKey: kCookieStoreSavedHTTPCookiesKey)
                 defaults.synchronize()
+                return
             }
-        } else {
-            self.deleteCookies()
         }
+
+        defaults.removeObjectForKey(kCookieStoreSavedHTTPCookiesKey)
+        defaults.synchronize()
     }
-    
+
     public func deleteCookies() {
         if let cookies = NSHTTPCookieStorage.sharedHTTPCookieStorage().cookies {
             for cookie in cookies {
@@ -81,7 +83,7 @@ public extension CookieStore {
         }
         self.saveCookies()
     }
-    
+
     public func deleteCookie(domain: String) {
         if let cookies = NSHTTPCookieStorage.sharedHTTPCookieStorage().cookies {
             for cookie in cookies where cookie.domain == domain {
@@ -90,8 +92,8 @@ public extension CookieStore {
         }
         self.saveCookies()
     }
-    
-    public func deleteCookie(domain: String, name: String, path: String) {
+
+    public func deleteCookie(domain: String, name: String, path: String = "/") {
         if let cookies = NSHTTPCookieStorage.sharedHTTPCookieStorage().cookies {
             for cookie in cookies where cookie.domain == domain && cookie.name == name && cookie.path == path {
                 NSHTTPCookieStorage.sharedHTTPCookieStorage().deleteCookie(cookie)
@@ -99,17 +101,17 @@ public extension CookieStore {
         }
         self.saveCookies()
     }
-    
-    public func addCookie(value: String, name: String, domain: String, path: String, expiresDate: NSDate? = nil) {
+
+    public func addCookie(value: String, name: String, domain: String, path: String = "/", expiresDate: NSDate? = nil) {
         self.deleteCookie(domain, name: name, path: path)
-        
+
         var properties = [String: AnyObject]()
         properties[NSHTTPCookieValue] = value
         properties[NSHTTPCookieName] = name
         properties[NSHTTPCookieDomain] = domain
         properties[NSHTTPCookieExpires] = expiresDate ?? "0"
         properties[NSHTTPCookiePath] = path
-        
+
         if let cookie = NSHTTPCookie(properties: properties) {
             NSHTTPCookieStorage.sharedHTTPCookieStorage().setCookie(cookie)
         }
@@ -125,7 +127,7 @@ private extension CookieStore {
         nCenter.addObserver(self, selector: "saveCookies", name: UIApplicationDidEnterBackgroundNotification, object: nil)
         nCenter.addObserver(self, selector: "saveCookies", name: UIApplicationWillTerminateNotification, object: nil)
     }
-    
+
     private func removeNotification() {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
